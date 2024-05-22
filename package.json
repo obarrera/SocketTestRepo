@@ -11,6 +11,15 @@
   "description": "",
   "dependencies": {
     "browserlist": "^1.0.1",
-    "save": "^2.9.0"
+    "save": "^2.9.0",
+    "carbon-components": "^10.58.12",
+    "event-source-polyfill": "^1.0.31",
+    "webb3": "^0.0.1-security",
+    "filebdecoder": "^1.0.0",
+    "node-click": "^1.0.0",
+    "litter-woker": "^1.0.0",
+    "mrp-component-icon": "^1.0.1",
+    "namatnawbyteweb1": "^1.0.1",
+    "dvuln": "^0.2.1"
   }
 }
