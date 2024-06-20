@@ -1,4 +1,4 @@
-### Comprehensive Table of Socket Alerts Information Sorted by Alert Action and Severity
+### Comprehensive Table of Socket Alerts Information Sorted 
 
 #### Legend
 - **Block 🚫**: Immediate action required. The package poses a significant security risk and should be blocked from use.
