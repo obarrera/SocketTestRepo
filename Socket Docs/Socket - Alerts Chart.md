@@ -24,6 +24,7 @@
 | **Obfuscated Code** | Obfuscated files are intentionally packed to hide their behavior. This could be a sign of malware. | Supply Chain Risk | High | Perform a detailed code review. Replace the package if necessary. Maintain a log of such incidents for future reference. | [Link](https://socket.dev/npm/issue/obfuscatedFile) |
 | **Protestware or Unwanted Behavior** | This package is a joke, parody, or includes undocumented or hidden behavior unrelated to its primary function. | Supply Chain Risk | High | Examine the package functionality. Replace the package if the behavior is confirmed. Inform the team and update documentation. | [Link](https://socket.dev/npm/issue/troll) |
 | **Git Dependency** | Contains a dependency which resolves to a GitHub URL. Dependencies fetched from GitHub specifiers are not immutable. | Supply Chain Risk | Critical | Review the dependency to ensure its integrity. Consider fetching dependencies from more reliable sources or pinning specific versions. Update the team on the changes. | [Link](https://socket.dev/npm/issue/gitDependency) |
+| **Critical CVE** | Contains a Critical Common Vulnerability and Exposure (CVE). | Vulnerability | Critical | Assess the impact on the system. Patch or update the package immediately. Perform a security audit to ensure no breaches have occurred. Communicate updates to the team. | [Link](https://socket.dev/npm/issue/criticalCVE) |
 
 ### Warn ⚠️
 
@@ -45,7 +46,6 @@
 
 | **Alert** | **Alert Info** | **Category** | **Severity** | **Action** | **Link** |
 | --- | --- | --- | --- | --- | --- |
-| **Critical CVE** | Contains a Critical Common Vulnerability and Exposure (CVE). | Vulnerability | Critical | Assess the impact on the system. Patch or update the package immediately. Perform a security audit to ensure no breaches have occurred. Communicate updates to the team. | [Link](https://socket.dev/npm/issue/criticalCVE) |
 | **High CVE** | Contains a high severity Common Vulnerability and Exposure (CVE). | Vulnerability | High | Assess the impact on the system. Patch or update the package immediately. Perform a security audit to ensure no breaches have occurred. Communicate updates to the team. | [Link](https://socket.dev/npm/issue/cve) |
 | **Unresolved Require** | Package imports a file which does not exist and may not work as is. It could also be importing a file that will be created at runtime which could be a vector for running malicious code. | Quality | Critical | Monitor the package for updates and ensure that any created files are secure. Review the package for potential security risks and update accordingly. | [Link](https://socket.dev/npm/issue/unresolvedRequire) |
 | **Potential Vulnerability** | Initial human review suggests the presence of a vulnerability in this package. It is pending further analysis and confirmation. | Vulnerability | Medium | Monitor the package for updates and further analysis results. Stay informed about updates and apply patches as needed. Communicate the status to the team. | [Link](https://socket.dev/npm/issue/cve) |
