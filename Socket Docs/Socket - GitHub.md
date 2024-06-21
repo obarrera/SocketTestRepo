@@ -14,27 +14,29 @@ Before you begin, ensure you have the following:
 
 ### Step 1: Setting Up Socket
 
-**1.1 Sign Up and Log In**
-- Visit the [Socket website](https://docs.socket.dev/docs/getting-started) and sign up for an account.
-- Log in to your account to access the Socket dashboard.
+#### 1.1 Sign Up and Log In
+1. Visit the [Socket website](https://docs.socket.dev/docs/getting-started) and sign up for an account.
+2. Log in to your account to access the Socket dashboard.
 
-**1.2 Install Socket CLI**
-- Open your terminal and run the following command to install the Socket CLI globally:
-  ```bash
-  npm install -g @socketsecurity/cli
-  ```
+#### 1.2 Install Socket CLI
+1. Open your terminal.
+2. Run the following command to install the Socket CLI globally:
+   ```bash
+   npm install -g @socketsecurity/cli
+   ```
 
 ### Step 2: Installing Socket GitHub App
 
-**2.1 Install the Socket App**
-- Follow the [installation instructions](https://docs.socket.dev/docs/socket-for-github-installation) to add Socket to your GitHub repository.
-- Navigate to the [Socket GitHub App](https://github.com/marketplace/socket) and click on "Install".
-- Select the repositories you want to integrate with Socket.
+#### 2.1 Install the Socket App
+1. Follow the [installation instructions](https://docs.socket.dev/docs/socket-for-github-installation) to add Socket to your GitHub repository.
+2. Navigate to the [Socket GitHub App](https://github.com/marketplace/socket) and click on "Install".
+3. Select the repositories you want to integrate with Socket.
 
 ### Step 3: Configuring GitHub Actions
 
-**3.1 Create or Update GitHub Actions Workflow**
-- Create or edit the `.github/workflows/socket-security.yml` file in the root directory of your repository with the configuration provided in the uploaded `socket.yaml` file. Here is an example configuration:
+#### 3.1 Create or Update GitHub Actions Workflow
+1. Create or edit the `.github/workflows/socket-security.yml` file in the root directory of your repository.
+2. Add the following configuration to enable Socket security scans:
 
 ```yaml
 name: socket-security-workflow
@@ -73,7 +75,6 @@ jobs:
                   'title': null
                 }
               }
-              
               return data;
       - name: Save Pull Request Number
         run: |
@@ -89,16 +90,16 @@ jobs:
 
 ### Step 4: Secure Environment Variables
 
-**4.1 Add Secrets to GitHub Repository**
-- Go to **Settings > Secrets and variables > Actions** in your GitHub repository.
-- Add the following secrets:
-  - `SOCKET_SECURITY_API_KEY`: Your Socket API key.
-  - `GH_API_TOKEN`: Your GitHub API token.
+#### 4.1 Add Secrets to GitHub Repository
+1. Go to **Settings > Secrets and variables > Actions** in your GitHub repository.
+2. Add the following secrets:
+   - `SOCKET_SECURITY_API_KEY`: Your Socket API key.
+   - `GH_API_TOKEN`: Your GitHub API token.
 
 ### Step 5: Running the Workflow
 
-**5.1 Commit and Push Changes**
-- Commit your changes to `.github/workflows/socket-security.yml` and push them to your GitHub repository.
+#### 5.1 Commit and Push Changes
+1. Commit your changes to `.github/workflows/socket-security.yml` and push them to your GitHub repository.
 
 ```bash
 git add .github/workflows/socket-security.yml
@@ -106,19 +107,81 @@ git commit -m "Add Socket security scan to GitHub Actions workflow"
 git push origin main
 ```
 
-**5.2 Monitor Workflow Execution**
-- Navigate to the **Actions** tab in GitHub.
-- Monitor the execution of the workflow. The Socket security scan will run as part of the workflow, checking for vulnerabilities and risks.
+#### 5.2 Monitor Workflow Execution
+1. Navigate to the **Actions** tab in GitHub.
+2. Monitor the execution of the workflow. The Socket security scan will run as part of the workflow, checking for vulnerabilities and risks.
 
 ### Step 6: Reviewing Results
 
-**6.1 View Workflow Logs**
-- Once the workflow has run, click on the workflow run to view the detailed logs.
-- Look for the output of the `socketcli` command to see the results of the security scan.
+#### 6.1 View Workflow Logs
+1. Once the workflow has run, click on the workflow run to view the detailed logs.
+2. Look for the output of the `socketcli` command to see the results of the security scan.
 
-**6.2 Addressing Issues**
-- If vulnerabilities or risks are detected, review the detailed report provided by Socket.
-- Take necessary actions to address the identified issues, such as updating dependencies or removing risky packages.
+#### 6.2 Addressing Issues
+1. If vulnerabilities or risks are detected, review the detailed report provided by Socket.
+2. Take necessary actions to address the identified issues, such as updating dependencies or removing risky packages.
+
+### Socket for GitHub: Key Features
+
+#### Telemetry Detection
+Socket can detect when a package is collecting telemetry, alerting you and providing actionable information on how to disable it.
+
+![Telemetry Detection](https://files.readme.io/955a9f7-telemetry.png)
+
+#### Protestware Detection
+Socket identifies packages that contain protestware, helping you evaluate whether to keep or remove them.
+
+![Protestware Detection](https://files.readme.io/0c13b9f-protestware.png)
+
+#### Install Script Detection
+Socket detects when a package introduces an install script, which is a common vector for malware.
+
+![Install Script Detection](https://files.readme.io/0b4b9de-install-script.png)
+
+#### Native Code Detection
+Socket alerts you when a package includes native code, which can be difficult to audit and may pose security risks.
+
+![Native Code Detection](https://files.readme.io/edaf42e-native-code.png)
+
+#### Typosquat Detection
+Socket detects potential typosquatting in package names to prevent malicious packages from entering your codebase.
+
+![Typosquat Detection](https://files.readme.io/cacee13-typosquat.png)
+
+### Advanced Configuration with `socket.yml`
+
+#### Project Ignore Paths
+The `projectIgnorePaths` key is an array of strings used to ignore folders or files. This is useful to exclude certain directories from being scanned.
+
+```yaml
+projectIgnorePaths:
+  - "node_modules"
+  - ".yarn"
+  - "dist"
+  - "build"
+```
+
+#### Trigger Paths
+The `triggerPaths` key is an array of strings used to match against files modified in pull requests to determine if a Pull Request alert scan should be performed.
+
+```yaml
+triggerPaths:
+  - "/workspaces/foo"
+  - "/workspaces/bar"
+```
+
+#### Issue Rules
+The `issueRules` key allows you to enable or disable issue alerts in your pull requests.
+
+```yaml
+issueRules:
+  didYouMean: true
+  installScripts: true
+  telemetry: true
+  troll: true
+  malware: true
+  hasNativeCode: true
+```
 
 ### Additional Resources
 
@@ -135,3 +198,5 @@ git push origin main
 4. **Review Reports**: Regularly review the security reports generated by Socket to stay informed about potential risks.
 
 By following this guide, you can effectively integrate Socket into your GitHub workflow, enhancing your CI/CD pipeline with robust security checks for third-party dependencies.
+
+For more detailed information, visit the [Socket Documentation](https://docs.socket.dev/docs/getting-started).
