@@ -63,10 +63,10 @@
 
 #### [Scene 6: Warning for Alerts]
 **Narrator:**
-"For high-risk alerts, such as 'Possible typosquat attack', you might want to warn your team to review the package carefully."
+"For high-risk alerts, such as 'Install Scripts', you might want to warn your team to review the package carefully."
 
 **Visuals:**
-- Click on a high-risk 'Possible typosquat attack' alert.
+- Click on a high-risk 'Install Scripts' alert.
 - Select 'Warn' from the dropdown menu.
 - Confirm the action.
 
@@ -78,10 +78,10 @@
 
 #### [Scene 7: Monitoring Alerts]
 **Narrator:**
-"Medium risk alerts, like 'Telemetry detected', can be set to monitor. This keeps track of the alert without immediate action."
+"Medium risk alerts, like 'Network access', can be set to monitor. This keeps track of the alert without immediate action."
 
 **Visuals:**
-- Click on a medium risk 'Telemetry detected' alert.
+- Click on a medium risk 'Network access' alert.
 - Select 'Monitor' from the dropdown menu.
 - Confirm the action.
 
@@ -93,10 +93,10 @@
 
 #### [Scene 8: Ignoring Alerts]
 **Narrator:**
-"For low-risk or non-actionable alerts, such as 'Obfuscated code', you can choose to ignore them."
+"For low-risk or non-actionable alerts, such as 'Low CVE', you can choose to ignore them."
 
 **Visuals:**
-- Click on a low-risk 'Obfuscated code' alert.
+- Click on a low-risk 'Low CVE' alert.
 - Select 'Ignore' from the dropdown menu.
 - Confirm the action.
 
@@ -125,12 +125,12 @@
 "Sometimes, you might need to override your security policy for an individual alert. This is where the triage functionality comes into play."
 
 **Visuals:**
-- Show a report with alerts listed.
-- Demonstrate overriding a policy by changing an alert's status from 'Monitor' to 'Block'.
+- Show the process of overriding an alert to ignore it in the triage interface.
+- Highlight the different reasons for dismissing an alert, as seen in the screenshot provided.
 
 **Text on Screen:**
 "Triage Alerts"
-"Override security policy for individual alerts when necessary."
+"Override security policy for individual alerts."
 
 ---
 
@@ -139,12 +139,12 @@
 "Common cases for triaging include dismissing an alert when the risk is tolerable, or escalating an alert's severity after evaluation."
 
 **Visuals:**
-- Show a scenario of dismissing an alert with reasons like 'Risk is tolerable to this project'.
-- Show a scenario of escalating an alert from 'Monitor' to 'Block' based on deeper analysis.
+- Examples of common triage actions.
+- Show a case where an alert is escalated from monitor to block after evaluation.
 
 **Text on Screen:**
-"Common Triage Scenarios"
-"Dismiss or escalate alerts based on project-specific evaluations."
+"Common Triage Cases"
+"Manage alerts effectively with custom actions."
 
 ---
 
@@ -154,7 +154,7 @@
 
 **Visuals:**
 - Display a summary of the alert actions (Block, Warn, Monitor, Ignore).
-- Highlight the benefits of automated security policy enforcement and triaging alerts.
+- Highlight the benefits of automated security policy enforcement.
 
 ---
 
@@ -173,3 +173,7 @@
 ---
 
 ### End of Script
+
+---
+
+This revised script incorporates the specific alert types and triage information as requested.
