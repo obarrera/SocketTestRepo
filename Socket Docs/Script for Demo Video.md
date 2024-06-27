@@ -176,4 +176,3 @@
 
 ---
 
-This revised script incorporates the specific alert types and triage information as requested.
