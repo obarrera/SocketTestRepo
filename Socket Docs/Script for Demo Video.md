@@ -4,14 +4,14 @@
 
 #### [Opening Scene: Title Screen]
 **Text on Screen:**
-"Socket: Triaging Organization Alerts & Security Policy Configuration"
+"Socket: Triaging Alerts & Security Policy Configuration"
 [Background Music Starts]
 
 ---
 
 #### [Scene 1: Introduction]
 **Narrator:**
-"Welcome to this brief demo on how to efficiently triage organization alerts and configure security policies using Socket."
+"Welcome to this brief demo on how to efficiently triage alerts and configure security policies using Socket."
 
 **Visuals:**
 - Display the Socket logo.
@@ -19,36 +19,27 @@
 
 ---
 
-#### [Scene 2: Accessing Organization Alerts]
+#### [Scene 2: Accessing Security Policy Page]
 **Narrator:**
-"Start by accessing the organization alerts. Navigate to the 'Alerts' section on the left-hand menu."
+"To get started, let's navigate to the Security Policy page. This is where you can configure how different types of alerts are handled. We will review an example Security Policy configuration, but it's important for each security policy to be tailored to meet the requirements of your organization."
 
 **Visuals:**
-- Screen recording of navigating to the 'Alerts' section.
+- Screen recording of navigating to the 'Security Policy' page.
 
 ---
 
-#### [Scene 3: Overview of Alerts Dashboard]
+#### [Scene 3: Overview of Security Policy]
 **Narrator:**
-"Here, you can see all the alerts detected within your organization's repositories. Alerts are categorized by severity: Critical, High, Medium, and Low."
+"On the Security Policy page, you can see various alert types categorized by severity. You have options to Block, Warn, Monitor, or Ignore these alerts."
 
 **Visuals:**
-- Highlight the different severity categories and the alerts listed under each.
+- Highlight the different alert types and the actions available for each.
 
 ---
 
-#### [Scene 4: Alert Actions Functionality]
+#### [Scene 4: Blocking an Alert]
 **Narrator:**
-"Socket provides four key actions to manage alerts: Block, Warn, Monitor, and Ignore. Let's see how these actions work."
-
-**Visuals:**
-- Zoom in on the alert actions dropdown menu.
-
----
-
-#### [Scene 5: Blocking an Alert]
-**Narrator:**
-"When an alert is critical, like 'Known malware', it's important to block it immediately to protect your codebase."
+"When an alert is critical, like 'Known malware', it may be better for your organization to block it immediately to protect your codebase."
 
 **Visuals:**
 - Click on a critical 'Known malware' alert.
@@ -61,7 +52,7 @@
 
 ---
 
-#### [Scene 6: Warning for Alerts]
+#### [Scene 5: Warning for Alerts]
 **Narrator:**
 "For high-risk alerts, such as 'Install Scripts', you might want to warn your team to review the package carefully."
 
@@ -76,7 +67,7 @@
 
 ---
 
-#### [Scene 7: Monitoring Alerts]
+#### [Scene 6: Monitoring Alerts]
 **Narrator:**
 "Medium risk alerts, like 'Network access', can be set to monitor. This keeps track of the alert without immediate action."
 
@@ -91,7 +82,7 @@
 
 ---
 
-#### [Scene 8: Ignoring Alerts]
+#### [Scene 7: Ignoring Alerts]
 **Narrator:**
 "For low-risk or non-actionable alerts, such as 'Low CVE', you can choose to ignore them."
 
@@ -106,49 +97,37 @@
 
 ---
 
-#### [Scene 9: Configuring Security Policy]
+#### [Scene 8: Triaging Alerts in Reports and Organizational Alerts]
 **Narrator:**
-"You can also customize your security policy to automatically handle specific types of alerts. Navigate to 'Security Policy' in the settings."
+"Sometimes you might need to override your security policy for an individual alert. This is where triaging comes into play. For example, you can triage an alert to ignore it if it's not relevant to your current project. Actions taken in the Reports Alerts or Organizational Alerts pages will override the Security Policy set for that package artifact in that repository."
 
 **Visuals:**
-- Navigate to 'Security Policy' in the settings.
-- Show the policy configuration screen.
+- Navigate to an alert in the 'Reports Alerts' or 'Organizational Alerts' section.
+- Show the process of overriding an alert action through triage.
 
 **Text on Screen:**
-"Security Policy"
-"Automate alert actions for consistent security enforcement."
+"Triage: Override Alert Actions"
+"Customize alert handling on a case-by-case basis."
 
 ---
 
-#### [Scene 10: Triage Alerts in Reports]
+#### [Scene 9: Alert Actions Overview]
 **Narrator:**
-"Sometimes, you might need to override your security policy for an individual alert. This is where the triage functionality comes into play."
+"Here's a quick overview of the different alert actions: Ignore, Monitor, Warn, and Block. Each action has different levels of visibility and impact."
 
 **Visuals:**
-- Show the process of overriding an alert to ignore it in the triage interface.
-- Highlight the different reasons for dismissing an alert, as seen in the screenshot provided.
+- Show a table or infographic:
 
-**Text on Screen:**
-"Triage Alerts"
-"Override security policy for individual alerts."
+| Alert Action | Shows up in Dashboard | Developers see it (e.g. GitHub comment, CLI prints a warning) | Developers blocked (GitHub PR fails, CLI errors) |
+|--------------|------------------------|-------------------------------------------------------------|-----------------------------------------------|
+| Ignore       | ❌                     | ❌                                                           | ❌                                             |
+| Monitor      | ✅                     | ❌                                                           | ❌                                             |
+| Warn         | ✅                     | ✅                                                           | ❌                                             |
+| Block        | ✅                     | ✅                                                           | ✅                                             |
 
 ---
 
-#### [Scene 11: Common Triage Cases]
-**Narrator:**
-"Common cases for triaging include dismissing an alert when the risk is tolerable, or escalating an alert's severity after evaluation."
-
-**Visuals:**
-- Examples of common triage actions.
-- Show a case where an alert is escalated from monitor to block after evaluation.
-
-**Text on Screen:**
-"Common Triage Cases"
-"Manage alerts effectively with custom actions."
-
----
-
-#### [Scene 12: Summary and Benefits]
+#### [Scene 10: Summary and Benefits]
 **Narrator:**
 "By using the alert actions and configuring your security policy, you can ensure that your codebase remains secure and compliant with minimal manual intervention."
 
@@ -176,3 +155,4 @@
 
 ---
 
+This script provides a detailed guide for creating a demo video on triaging reports alerts and organizational alerts and configuring security policies using Socket. The visual cues and narrated instructions will help viewers understand how to effectively manage alerts and enhance their security practices.
