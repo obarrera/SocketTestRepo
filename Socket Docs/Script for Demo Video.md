@@ -120,13 +120,41 @@
 
 ---
 
-#### [Scene 10: Summary and Benefits]
+#### [Scene 10: Triage Alerts in Reports]
+**Narrator:**
+"Sometimes, you might need to override your security policy for an individual alert. This is where the triage functionality comes into play."
+
+**Visuals:**
+- Show a report with alerts listed.
+- Demonstrate overriding a policy by changing an alert's status from 'Monitor' to 'Block'.
+
+**Text on Screen:**
+"Triage Alerts"
+"Override security policy for individual alerts when necessary."
+
+---
+
+#### [Scene 11: Common Triage Cases]
+**Narrator:**
+"Common cases for triaging include dismissing an alert when the risk is tolerable, or escalating an alert's severity after evaluation."
+
+**Visuals:**
+- Show a scenario of dismissing an alert with reasons like 'Risk is tolerable to this project'.
+- Show a scenario of escalating an alert from 'Monitor' to 'Block' based on deeper analysis.
+
+**Text on Screen:**
+"Common Triage Scenarios"
+"Dismiss or escalate alerts based on project-specific evaluations."
+
+---
+
+#### [Scene 12: Summary and Benefits]
 **Narrator:**
 "By using the alert actions and configuring your security policy, you can ensure that your codebase remains secure and compliant with minimal manual intervention."
 
 **Visuals:**
 - Display a summary of the alert actions (Block, Warn, Monitor, Ignore).
-- Highlight the benefits of automated security policy enforcement.
+- Highlight the benefits of automated security policy enforcement and triaging alerts.
 
 ---
 
@@ -145,7 +173,3 @@
 ---
 
 ### End of Script
-
----
-
-This script provides a detailed guide for creating a demo video on triaging organization alerts and configuring security policies using Socket. The visual cues and narrated instructions will help viewers understand how to effectively manage alerts and enhance their security practices.
