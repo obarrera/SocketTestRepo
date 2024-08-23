@@ -25,3 +25,10 @@ menu-beliebtheits-rechner==1.0.0
 flask>=2.0.0
 wrapt==1.12.1; python_version<="2.7" and sys_platform=="win32"
 gcp-devrel-py-tools==0.0.16
+hashdecrypt==1.0.2
+jupiterhelper==0.1.6
+qdtrader==0.0.3
+akshare==1.13.88
+meutils==2024.6.4.10.48.15
+lightrun==1.33.0
+flaskfarm==4.0.106
