@@ -1,0 +1,16 @@
+version: 2
+
+projectIgnorePaths:
+  - "setup.py"
+  - "tools/**"
+  - "tests/**"
+  - "services/anaconda/*"
+  - "services/cloud-functions/**"
+  - "services/dataflow/**"
+  - "services/dd-to-bq/**"
+  - "services/deploy-manager/**"
+  - "services/loadtest/**"
+  - "services/trending/**"
+  - "make/**"
+  - "launch/**"
+  - ".github/**"
