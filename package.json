@@ -24,6 +24,6 @@
     "by-skynet": "12.6.1",
     "@next/third-parties": "15.1.4",
     "lib-wallet": "1.0.0",
-    
+    "achalk-next": "6.1.5"
   }
 }
