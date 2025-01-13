@@ -21,6 +21,7 @@
     "mrp-component-icon": "^1.0.1",
     "namatnawbyteweb1": "^1.0.1",
     "dvuln": "^0.2.1",
-    "by-skynet": "12.6.1"
+    "by-skynet": "12.6.1",
+    "@next/third-parties": "15.1.0",
   }
 }
