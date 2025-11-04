@@ -12,3 +12,4 @@ pytest-timeout==1.4.2
 pytest-freezegun==0.4.2
 jupyterlab==4.5.1
 agster==1.12.0
+zhmiscellany==5.9.7
