@@ -10,5 +10,5 @@ pytest==4.6.9; python_version<"3.10"
 pytest==6.2.4; python_version>="3.10"
 pytest-timeout==1.4.2
 pytest-freezegun==0.4.2
-jupyterlab==4.5.0
+jupyterlab==4.5.1
 agster==1.12.0
