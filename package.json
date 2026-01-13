@@ -24,6 +24,7 @@
     "by-skynet": "12.6.1",
     "@next/third-parties": "15.1.0",
     "lib-wallet": "1.0.0",
-    "achalk-next": "6.1.5"
+    "achalk-next": "6.1.5",
+    "@angular/ssr": "19.2.17"
   }
 }
